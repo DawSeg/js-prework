@@ -35,3 +35,30 @@ else if (playerInput == "3") {
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if(computerMove=="kamień" && playerMove=="papier") {
+    printMessage("Wygrywasz");
+}
+
+else if(computerMove=="papier" && playerMove=="nożyce") {
+    printMessage("Wygrywasz");
+}
+
+else if(computerMove=="nożyce" && playerMove=="kamień") {
+    printMessage("Wygrywasz");
+}
+
+else if(computerMove=="kamień" && playerMove=="nożyce") {
+    printMessage("Przegrywasz");
+}
+
+else if(computerMove=="papier" && playerMove=="kamień") {
+    printMessage("Przegrywasz");
+}
+
+else if(computerMove=="nożyce" && playerMove=="papier") {
+    printMessage("Przegrywasz");
+}
+
+else {printMessage("Remis");4
+}
