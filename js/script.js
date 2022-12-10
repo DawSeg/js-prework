@@ -47,11 +47,11 @@ const playGame = function(playerInput){
     const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log("Komputer wylosował: " + randomNumber);
 
-    const ComputerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
-    const PlayerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
-    displayResult(ComputerMove, PlayerMove);
+    displayResult(computerMove, playerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
